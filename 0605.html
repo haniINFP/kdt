@@ -104,7 +104,7 @@
     <div>색 선택</div>
     <input type="color">
     <div>날짜 선택</div>
-    <input type="date">
+    <input type="date" value="2024-06-04">
     <div>날짜와 시간 선택</div>
     <input type="datetime-local">
     <div>비밀번호는 안 보여</div>
@@ -114,7 +114,81 @@
     <div>이메일 입력</div>
     <input type="email">
     <div>성별 선택</div>
-    <input type="radio">남성
-    <input type="radio">여성
+    <input type="radio" name="g" checked>남성 <!--checked하면 기본적으로 체크되어 표시됨 허전하잖아~-->
+    <input type="radio" name="g">여성
+    <br>
+    <input type="checkbox" name="s">약관에 동의합니다.
+    <input type="checkbox" name="s">약관에 동의 안 합니다.
+    <br><br>
+    <div>비활성화</div>
+    <input disabled>
+    <input disabled value="값을 입력할 수 없어요">
+    <input type="date" disabled>
+    <input type="color" disabled>
+    <input type="file" disabled>
+    <br><br>
+    <div>읽어주세요</div>
+    <input readonly value="수정은 못하고 읽기만 가능"><br><br>
+    <div>여러 줄로 쓸 수 있습니다.</div>
+    <textarea></textarea>
+    <textarea>value 속성은 없습니다 &#13; 다음 줄 입력</textarea>
+    <div>여러 줄로 쓸 수 있습니다</div>
+    <textarea rows="4"></textarea>
+    <br><br>
+    <div>이름과 나이</div>
+    <input>
+    <label>이름</label><br>
+    <input type="number" min="0">
+    <label>나이</label><br>
+    <span>이름</span><br>
+    <input type="number">
+    <br>
+    
+    <div>이름과 나이</div>
+    <input id="name"><label for="name">이름</label><br>
+    <input id="age" type="number" min="0">
+    <label for="age">나이</label>
+    <div>국가를 선택하시오</div>
+    <select>
+        <option>대한민국</option>
+        <option>일본</option>
+        <option>미국</option>
+        <option>싱가포르</option>
+    </select>
+
+    <div>국가를 선택하시오</div>
+    <select multiple>
+        <option>대한민국</option>
+        <option>일본</option>
+        <option>미국</option>
+        <option>싱가포르</option>
+    </select>
+    <!--자동완성 만들어보기-->
+    <div>국가를 선택하시오</div>
+    <select>
+    <input list="dataList">
+    <datalist id="dataList">
+        <option>대한민국</option>
+        <option>일본</option>
+        <option>미국</option>
+        <option>싱가포르</option>
+    </datalist>
+    </select><br><br>
+
+    <form>
+        <label for="name">이름:</label><input id="name"><br>
+        <label for="age">나이:</label><input id="age" tyep="number" min="0"><br>
+        <label for = "birth">생일:</label>    <input id="birth" type="date"><br>
+        <label for="country">국가: </label>
+            <select>
+                <option>대한민국</option>
+                <option>미국</option>
+                <option>싱가포르</option>
+                <option>에콰도르</option>
+            </select><br><br>
+            <button >초기화</button>
+            <button>저장</button>
+
+    </form>
 </body>
 </html>
