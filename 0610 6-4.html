@@ -85,11 +85,71 @@
 </h1>
 -->
 <style>
- .h1 {
-    word-break: keep-all;
- }
-</style>
+    h1 {
+       word-break: keep-all;
+    }
+
+    h4 {
+        text-align:center;
+    }
+    h5 {
+        text-align: left;
+    }
+    h6 {
+        text-align: right;
+    }
+    span{
+        text-align: center;
+    }
+    h4{
+        font-family: 없는 폰트, sans-serif;
+    }
+   </style>
 
 <h1>hello world!</h1>
 <h1>세계 제일 품질</h1>
 <h1>대한민국 만세!</h1>
+
+<h4>중앙</h4>
+<h5>왼쪽 (기본)</h5>
+<h6>오른쪽</h6>
+<span>중앙이 안 된다</span>
+<style>
+    @font-face {
+    font-family: maru-buri;
+    font-weight: 200;
+    src: url('/fonts/MaruBuri-ExtraLight');
+}
+
+    @font-face {
+        font-family: maru-buri;
+        font-weight: 300;
+        src: url('/fonts/MaruBuri-Light');
+    }
+    @font-face {
+    font-family: maru-buri;
+    src: url('/fonts/MaruBuri-Regular');
+    }
+    @font-face {
+        font-family: maru-buri;
+        font-weight: 600;
+        src: url('/fonts/MaruBuri-SemiBold');
+    }
+    @font-face {
+        font-family: maru-buri;
+        font-weight: 700;
+        src: url('/fonts/MaruBuri-Bold');
+    }
+div {
+    font-family: maru-buri, sans-serif;
+}
+span{
+    font-family: maru-buri, sans-serif;
+    font-weight: 700;
+}
+</style>
+<div> 평범한 마루부리</div>
+<span> 굵은 마루부리</span>
+
+
+<!--웹폰트 추가하기-->
