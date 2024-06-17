@@ -1,0 +1,245 @@
+<!-- 7.4 BOX 여백 설정
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+    </style>
+    <div>웹 개발에서 여백은 정말 중요해요</div>
+</body>
+</html> -->
+
+<!-- <style>
+    h1{
+        margin: 0;
+        background-color: aqua;
+    }
+    div {
+        margin-top: 16px;
+        background-color: antiquewhite;
+    }
+</style>
+<h1>기존 여백이 제거되었습니다</h1>
+<div>위 요소랑 16xp만큼 떨어질래요!</div> -->
+
+<!-- <style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin-left: 16px;
+        background-color: gray;
+    }
+</style>
+<div>왼쪽 겉 여백 추가</div> -->
+
+<!-- <style>
+    h1 {
+        width: 100px;
+        height: 100px;
+        margin: 100px 8px 32px 64px;
+        background-color: gray;
+    }
+    div {
+        background-color: antiquewhite;
+    }
+</style>
+<div>H1전 <h1> </h1>h1후</div>
+ -->
+
+<!-- <style>
+    h1 {
+        width: 100px;
+        height: 100px;
+        margin: 100px 8px 32px;
+        background-color: gray;
+    }
+    div {
+        background-color: rgb(194, 215, 239);
+    }
+</style>
+<div>H1전 <h1> </h1>h1후</div> -->
+
+<!-- <style>
+    h1 {
+        width: 100px;
+        height: 100px;
+        margin: 100px  16px;
+        background-color: gray;
+    }
+    div {
+        background-color: rgb(194, 215, 239);
+    }
+</style>
+<div>H1전 <h1> </h1>h1후</div> -->
+
+
+<!--<style>
+    h1 {
+        width: 100px;
+        height: 100px;
+        margin: auto; /*auto일 경우 최대한 떨어지려고 함*/
+        background-color: gray;
+    }
+    div {
+        background-color: rgb(194, 215, 239);
+        height: 300px;
+    }
+</style>
+<div>
+    <h1>c</h1>
+</div>-->
+
+<!-- <style>
+    h1{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        background-color: brown;
+    }
+    h2{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        background-color: violet;
+    }
+</style>
+<h1> </h1>
+<h2> </h2> -->
+
+<!--<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        padding-right: 16px;
+    }
+</style>
+<div>
+    <span>span은 아무 스타일도 없습니다</span>
+</div>-->
+
+
+<!-- <style>
+    div {
+        width: 150px;
+        height: 150px;
+        padding: 16px;
+        background-color: aquamarine;
+        box-sizing: border-box;
+    }
+    h1 {
+        width: 150px;
+        height: 150px;
+        padding: 32px;
+        background-color: beige;
+        font-size: 16px;
+        font-weight: normal;
+    }
+</style>
+
+<div>
+    박스 사이징 border-box<br>
+    padding까지 폭과 높이에 포함
+</div>
+<h1>
+    박스 사이징 기본값(content-box)<br>
+    padding이 폭과 높이에 합산
+</h1> -->
+
+<!-- 7.5 BOX의 그림자 스타일
+<style>
+    div{
+        width:150px;
+        height:150px;
+        background-color: beige;
+        padding-left: 16px;
+     
+    }
+</style>
+<div>
+    <span>왼쪽에 속 여백 있음ㅇㅇㅇㅇ.</span>
+</div> -->
+
+<!-- <style>
+    h1{
+        margin:0;
+        padding-bottom: 10px;
+        background-color: aquamarine;
+        }
+    h2 {
+        margin: 0;
+        padding-top: 20px;
+        background-color: antiquewhite;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+
+<h1>
+    <div> </div>
+</h1>
+<h2>
+    <div> </div>
+</h2> -->
+
+<!-- bos sizing 또 다른 상자 크기 계산법-->
+
+<!-- <style>
+    div{
+        width: 150px;
+        height: 150px;
+        padding: 16px;
+        background-color: aquamarine;
+        box-sizing: border-box;
+    }
+    h1{
+        width: 150px;
+        height: 150px;
+        padding: 16px;
+        background-color: beige;
+        font-size: 16px;
+        font-weight: normal;
+    }
+</style>
+
+<div>
+    박스 사이징 border-box<br>
+    padding까지 폭과 높이에 포함
+</div>
+<h1>
+    박스 사이징 기본값(content-box)<br>
+    padding이 폭과 높이에 합산
+</h1> -->
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    div {
+        width: 150px;
+        height: 150px;
+        padding: 16px;
+        background-color: aquamarine;
+        }
+    h1 {
+        width: 150px;
+        height: 150px;
+        padding: 32px;
+        background-color: beige;
+        font-size: 16px;
+        font-weight: normal;
+    }
+</style>
+
+<div>*은 모든 요소를 대상으로 box-sizing 설정,,서로 다른 태그도</div>
+<h1>width와 height가 바로 적용된다.</h1>

@@ -1,0 +1,316 @@
+<!--태그 선택자-->
+
+<!-- <style>
+div{
+    color: red;
+}
+span {
+    color: blue;
+}
+</style>
+
+<div>
+    div 태그는 빨간색
+    <br>
+    <span>span 태그는 파란색</span>
+    <br>
+    가장 가까운 스타일이 적용됨
+</div>
+ -->
+
+
+<!--8.2 전체 선택자-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            font-size: 20px;
+            color: blueviolet;
+        }
+    </style>
+    
+    <div>
+        모든 태그가 일괄 적용
+    </div>
+    <h1>
+        h1 태그도 div 태그와 동일한 스타일로 적용
+    </h1>
+    아무것도 없어 보이더라도 결국 html, body 태그 안에 있으므로 적용
+    <input>
+    
+</body>
+</html> -->
+
+
+<!--8.3 아이디 선택자-->
+<!-- <style>
+    #box{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+    }
+    #BOX{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<div id="box">
+    내 아이디는 box 
+</div>
+<br>
+<div id="BOX">
+    내 아이디는 BOX
+    대소문자 구분함ㅎ
+</div> -->
+
+
+<!--8.4 클래스 선택자-->
+<!-- <style>
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+    #blueBox {
+        background-color: blue;
+        color: white;
+    }
+    #redBox {
+        background-color: red;
+    }
+</style>
+<div id="blueBox" class="square">Blue Box</div><Br>
+<div id="redBox" class="square">Red Box</div> -->
+
+<!-- <style>
+    .red {
+        color: red;
+    }
+    .bg-yellow {
+        background-color: yellow;
+    }
+    .font-lg {
+        font-size: 20px;
+    }
+</style>
+
+<div>
+    코드는 <span class="red">이해하면서 따라해</span>야 합니다.
+    <br>
+    책을 읽는 사람 모두 <span class="font-lg bg-yellow">멋진 웹 사이트</span>를 만들 수 있을 거예요.
+</div> -->
+
+<!--8.5 속성 선택자-->
+<!-- 
+<style>
+    *[href] {
+        background-color: yellow;
+        color: black;
+    }
+    a[href='https://www.naver.com']{
+        background-color: green;
+        color: white;
+    }
+    a[href='https://www.google.com']{
+        background-color: red;
+        color: white;
+    }
+
+</style>
+
+<a href="https://www.naver.com">네이버 접속</a>
+<div href="">난 div태그인데?</div>
+<a href="https://www.google.com">구글 접속</a> -->
+
+
+<!--8.6 가상 클래스 선택자-->
+
+<!-- <style>
+    .colorful-box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .colorful-box:hover {
+        background-color: blue;
+    }
+</style>
+    
+<div class="colorful-box"> </div> -->
+
+<!--8.6.2 active 활성화 되었을 때-->
+<!-- <button>아아</button>
+
+<style>
+    button:active{
+        background-color: aqua;
+    }
+    .click:active {
+        background-color: red;
+    }
+</style>
+
+<button>아아이</button>
+<div class="click"> 다른 태그들도 될까요/</div>
+<span class="click"> 됩니다!</span>
+ -->
+
+
+ <!-- <style>
+    *:checked{
+        box-shadow: 0px 0px 0px 4px violet;
+    }
+ </style>
+
+ <div>
+    <input type="checkbox" id="chk">
+    <label for="chk">체크박스</label>
+ </div>
+ <div>
+    <input type="radio" id="radA" name="rad">
+    <label for="radA">라디오버튼 A</label>
+    <input type="radio" id="radB" name="rad">
+    <label for="radB">라디오버튼 B</label>
+ </div> -->
+
+
+ <!-- <style>
+*:disabled{
+    background-color: aqua;
+}
+ </style>
+<input disabled>
+<div disabled>비활성 div 태그</div> -->
+
+
+<!-- <style>
+    *:enabled{
+        background-color: aquamarine;
+    }
+</style>
+<input>
+<button>버튼</button> -->
+
+<!-- <style>
+    input:focus {
+        box-shadow: 0px 0px 0px 4px red;
+    }
+</style>
+<input> -->
+
+
+<!-- <style>
+    *:focus{
+        box-shadow: 0px 0px 0px 4px red;
+    }
+    .box {
+        width: 150px;
+        height: 150px;
+        border:  2px solid blue;
+    }
+</style>
+
+<input>
+<div class="box">상호작용 불가능</div>
+<div class="box" tabindex="0">상호작용 가능</div> -->
+
+
+<!-- 8.6.8 nth-child N번째 요소
+     <style>
+    .box {
+        width: 150px;
+        height: 150px;
+        border: 2px solid blue;
+    }
+    .box:nth-child(2) {
+        background-color: violet;
+    }
+</style>
+
+<div>
+    <div class="box">첫 상자</div>
+    <div class="box">두번째 상자</div>
+    <div class="box">상자 셋</div>
+</div> -->
+
+
+<!--중복되는 테두리 제거하기-->
+<!--테두리 제거한 다음에 있어야 하는 테두리는 따로 생성해 주기!-->
+
+<!-- <style>
+    .box {
+        width: 150px;
+        height: 150px;
+        border: 2px solid blue;
+        border-top: none;
+    }
+   .box:nth-child(1) {
+    border-top: 2px solid blue;
+   }
+</style>
+
+<div>
+    <div class="box">첫 상자</div>
+    <div class="box">두번째 상자</div>
+    <div class="box">상자 셋</div>
+</div> -->
+
+<!-- <style>
+    .box {
+        width: 150px;
+        height: 150px;
+        border:  2px solid blue;
+    }
+    .box ~.box {
+        border-top: none;
+    }
+</style>
+
+<div class="box">첫</div>
+<div class="box">둘</div>
+<div class="box">셋</div> -->
+
+<!-- <style>
+    .box{
+        width: 150px;
+        height: 150px;
+        border: 2px solid blue;
+    }
+    .a +.b {
+        background-color: red;
+    }
+</style>
+<div class="a box">a 클래스</div>
+<div class="b box">b 클래스</div> -->
+
+
+<style>
+    .form-wr > label {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .form-wr > input {
+        font-size: 20px;
+    }
+    .form-wr span {
+        color: red;
+    }
+</style>
+
+<div class="form-wr">
+    <label>굵은라벨
+        </label>
+        <input placeholder="부모 요소 덕에 스타일 적용">
+        <div>
+            <br>
+            <span>자손이라서 선택됨</span>
+        </div>
+</div>
+
